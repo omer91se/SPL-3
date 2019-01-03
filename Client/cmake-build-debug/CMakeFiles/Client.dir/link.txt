@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Client.dir/src/client.cpp.o CMakeFiles/Client.dir/src/Task.cpp.o CMakeFiles/Client.dir/src/_ConnectionHandler.cpp.o CMakeFiles/Client.dir/src/EncoderDecoder.cpp.o  -o Client 
