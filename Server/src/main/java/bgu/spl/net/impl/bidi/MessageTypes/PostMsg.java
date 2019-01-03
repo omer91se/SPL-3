@@ -35,11 +35,12 @@ public class PostMsg implements Msg {
                 msg = msg.substring(msg.indexOf('@'));
 
                 if (msg.indexOf(' ') >= 0)
-                    taggedUsers.add(msg.substring(1, ' '));
+                    taggedUsers.add(msg.substring(1, msg.indexOf(' ')));
 
                 else taggedUsers.add(msg.substring(1));
             }
-            msg = msg.substring(msg.charAt(i+1));
+            if(msg.length()>i)
+                msg = msg.substring(i+1);
 
         }
         return taggedUsers;

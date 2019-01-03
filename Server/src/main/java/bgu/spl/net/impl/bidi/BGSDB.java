@@ -4,6 +4,7 @@ import bgu.spl.net.impl.bidi.MessageTypes.Msg;
 import bgu.spl.net.impl.bidi.MessageTypes.MsgType;
 import bgu.spl.net.impl.bidi.MessageTypes.PMrequestMsg;
 import bgu.spl.net.impl.bidi.MessageTypes.PostMsg;
+import javafx.util.Pair;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -75,9 +76,9 @@ public class BGSDB {
     public int follow(String username, List<String> toFollowList){
         int success = 0;
         for(String user : toFollowList){
-            if(!followingMap.get(username).contains(user)){
+            if(!followingMap.get(user).contains(username)){
                 ++success;
-                followingMap.get(username).add(user);
+                followingMap.get(user).add(username);
             }
         }
         return success;
@@ -154,9 +155,10 @@ public class BGSDB {
         return followingMap.get(user).size();
     }
 
-    public void postShared(String username){
-        Integer i = postsCounter.get(username);
-        i++;
+    public void postShared(String username) {
+        if (postsCounter.containsKey(username)) {
+            postsCounter.replace(username, postsCounter.get(username)+1);
+        }
     }
 
 }

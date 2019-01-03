@@ -8,7 +8,8 @@ public class FollowMsg implements Msg {
     private final MsgType type = MsgType.FOLLOW;
 
     public FollowMsg(boolean isFollow, List<String> users){
-
+        this.isFollow = isFollow;
+        this.users = users;
     }
 
     public boolean isFollow() {

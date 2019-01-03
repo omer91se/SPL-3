@@ -26,6 +26,9 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
                 case(1):
                     byte[] usernameByte1 = subArrayToZero(2);
                     String username1 = new String(usernameByte1, StandardCharsets.UTF_8);
+                    if(username1.indexOf('\0') >= 0){
+                        username1 = username1.substring(0 , username1.length()-1);
+                    }
                     byte[] passwordByte1 = subArrayToZero(2 + usernameByte1.length);
                     String password1 = new String(passwordByte1, StandardCharsets.UTF_8);
 
@@ -34,6 +37,9 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
                 case(2):
                     byte[] usernameByte2 = subArrayToZero(2);
                     String username2 = new String(usernameByte2, StandardCharsets.UTF_8);
+                    if(username2.indexOf('\0') >= 0){
+                        username2 = username2.substring(0 , username2.length()-1);
+                    }
                     byte[] passwordByte2 = subArrayToZero(2 + usernameByte2.length);
                     String password2 = new String(passwordByte2, StandardCharsets.UTF_8);
 
@@ -46,19 +52,26 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
 
                 case(4):
                     boolean isFollow = false;
-                    if (bytes[2] == 0)
+                    if (bytes[2] == 48)
                         isFollow = true;
 
-                    byte[] nOfUsers = new byte[2];
-                    nOfUsers[0] = bytes[3];
-                    nOfUsers[1] = bytes[4];
-                    short numOfUsers = bytesToShort(nOfUsers);
+                    char a = (char)bytes[3];
+                    char b = (char)bytes[4];
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(a);
+                    sb.append(b);
+                    String numOfUsers = sb.toString();
+                    int nOfUsers = Integer.parseInt(numOfUsers);
                     int from = 5;
                     List<String> users = new LinkedList<>();
-                    for (int i = 0; i < numOfUsers; i++) {
+                    for (int i = 0; i < nOfUsers; i++) {
                         byte[] usernameByte4 = subArrayToZero(from);
-                        from = from + usernameByte4.length +1;
-                        users.add(new String(usernameByte4,StandardCharsets.UTF_8));
+                        from = from + usernameByte4.length ;
+                        String username4 = new String(usernameByte4,StandardCharsets.UTF_8);
+                        if(username4.indexOf('\0') >= 0){
+                            username4 = username4.substring(0 , username4.length()-1);
+                        }
+                        users.add(username4);
                     }
 
                     message = new FollowMsg(isFollow, users);
@@ -66,12 +79,16 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
 
                 case(5):
                     byte[] contentByte5 = subArrayToZero(2);
-                    message = new PostMsg(new String(contentByte5, StandardCharsets.UTF_8));
+                    String cont = new String(contentByte5, StandardCharsets.UTF_8);
+                    message = new PostMsg(cont.substring(0, cont.length()-1));
                     break;
 
                 case(6):
                     byte[] usernameByte6 = subArrayToZero(2);
                     String username6 = new String(usernameByte6, StandardCharsets.UTF_8);
+                    if(username6.indexOf('\0') >= 0){
+                        username6 = username6.substring(0 , username6.length()-1);
+                    }
                     byte[] contentByte6 = subArrayToZero(2 + usernameByte6.length);
                     String content6 = new String(contentByte6, StandardCharsets.UTF_8);
 
@@ -84,25 +101,32 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
 
                 case(8):
                     byte[] usernameByte8 = subArrayToZero(2);
-                    message = new StatMsg(new String(usernameByte8, StandardCharsets.UTF_8));
-                    break;
-
-                case(9):
-                    boolean isPM = false;
-                    byte charByte = bytes[2];
-                    char ch = (char)charByte;
-                    if(ch == '0'){
-                        isPM =true;
+                    String username8 = new String(usernameByte8, StandardCharsets.UTF_8);
+                    if(username8.indexOf('\0') >= 0){
+                        username8 = username8.substring(0 , username8.length()-1);
                     }
-
-                    byte[] postingUserBytes = subArrayToZero(3);
-                    String postingUser = new String(postingUserBytes, StandardCharsets.UTF_8);
-
-                    byte[] contentByte9 = subArrayToZero(3 + postingUserBytes.length);
-                    String content9 = new String(contentByte9, StandardCharsets.UTF_8);
-
-                    message = new NotificationMsg(isPM, postingUser, content9);
+                    message = new StatMsg(username8);
                     break;
+
+//                case(9):
+//                    boolean isPM = false;
+//                    byte charByte = bytes[2];
+//                    char ch = (char)charByte;
+//                    if(ch == '0'){
+//                        isPM =true;
+//                    }
+//
+//                    byte[] postingUserBytes = subArrayToZero(3);
+//                    String postingUser = new String(postingUserBytes, StandardCharsets.UTF_8);
+//                    if(postingUser.indexOf('\0') >= 0){
+//                        postingUser = postingUser.substring(0 , postingUser.length()-1);
+//                    }
+//
+//                    byte[] contentByte9 = subArrayToZero(3 + postingUserBytes.length);
+//                    String content9 = new String(contentByte9, StandardCharsets.UTF_8);
+//
+//                    message = new NotificationMsg(isPM, postingUser, content9);
+//                    break;
 
             }
 
@@ -137,15 +161,13 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
 
 
                 //Encode PM ot Public
-                short type;
+                String type;
                 if(((NotificationMsg)message).isPM())
-                    type = 0;
+                    type = "0";
                 else
-                    type = 1;
+                    type = "1";
 
-                byte[] tmp = shortToBytes(type);
-                byte[] typeByte = new byte[1];
-                typeByte[0] = tmp[1];
+                byte[] typeByte = type.getBytes();
                 pushBytes(typeByte);
 
                 //Encode posting user
@@ -159,6 +181,8 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
                 pushBytes(contentByte);
 
                 pushZero();
+
+
 
                 break;
 
@@ -241,8 +265,11 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T> {
 
                 break;
         }
-
-        return encodeBytes;
+        byte[] toSend = new byte[encodeBytesInd];
+        for(int i = 0; i<encodeBytesInd; i++){
+            toSend[i] = encodeBytes[i];
+        }
+        return toSend;
     }
 
 

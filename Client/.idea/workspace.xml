@@ -11,7 +11,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82c07160-96c2-4377-bcd7-75555c3ac6d8" name="Default Changelist" comment="" />
+    <list default="true" id="82c07160-96c2-4377-bcd7-75555c3ac6d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/ConnectionHandler.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/ConnectionHandler.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/EncoderDecoder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/EncoderDecoder.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/Task.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/Task.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/client.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/client.dir/src/client.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/client" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectionHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EncoderDecoder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/EncoderDecoder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/BGSDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/BGSDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/BidiMessagingProtocolImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/BidiMessagingProtocolImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/MessageTypes/FollowMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/impl/bidi/MessageTypes/FollowMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/srv/BlockingConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/bgu/spl/net/srv/BlockingConnectionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/BGSDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/BGSDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/BidiMessagingProtocolImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/BidiMessagingProtocolImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageEncoderDecoderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageTypes/FollowMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/impl/bidi/MessageTypes/FollowMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/srv/BlockingConnectionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/target/classes/bgu/spl/net/srv/BlockingConnectionHandler.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,16 +48,17 @@
     <session id="1144947233">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.34" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="client (disassembly)" value="2" />
+          <entry key="client (disassembly)" value="6" />
           <entry key="cpp" value="12" />
           <entry key="h" value="11" />
           <entry key="hpp" value="1" />
@@ -44,104 +69,28 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="Disassembly" value="2" />
+          <entry key="Disassembly" value="6" />
           <entry key="ObjectiveC" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5771" />
+          <entry key="cpp" value="7393" />
           <entry key="h" value="515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="6286" />
+          <entry key="ObjectiveC" value="7908" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="client" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/Task.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding>
-                <element signature="e#109#128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/EncoderDecoder.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-              <folding>
-                <element signature="e#110#127#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EncoderDecoder.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="106" column="15" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="15" />
-              <folding>
-                <element signature="e#45#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#45#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ConnectionHandler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/ConnectionHandler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -157,14 +106,17 @@
       <find>_handler</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ ConnectionHandler.cpp" />
         <option value="$PROJECT_DIR$/include/EncoderDecoder.h" />
         <option value="$PROJECT_DIR$/include/ConnectionHandler.h" />
-        <option value="$PROJECT_DIR$/src/ConnectionHandler.cpp" />
         <option value="$PROJECT_DIR$/include/Task.h" />
+        <option value="$PROJECT_DIR$/src/ConnectionHandler.cpp" />
         <option value="$PROJECT_DIR$/src/Task.cpp" />
         <option value="$PROJECT_DIR$/src/EncoderDecoder.cpp" />
         <option value="$PROJECT_DIR$/src/client.cpp" />
@@ -178,11 +130,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1448" />
-    <option name="y" value="78" />
-    <option name="width" value="1613" />
-    <option name="height" value="990" />
+    <option name="x" value="1730" />
+    <option name="y" value="24" />
+    <option name="width" value="1202" />
+    <option name="height" value="1026" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -258,37 +211,60 @@
       <updated>1546081644655</updated>
       <workItem from="1546081646694" duration="17592000" />
       <workItem from="1546423511256" duration="133000" />
-      <workItem from="1546434328620" duration="29088000" />
+      <workItem from="1546434328620" duration="57061000" />
+      <workItem from="1546547075600" duration="1523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46813000" />
+    <option name="totallyTimeSpent" value="76309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1745" y="-4" width="1615" height="1054" extended-state="6" />
+    <frame x="1744" y="-11" width="1617" height="1062" extended-state="6" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25621414" />
+      <window_info id="Favorites" order="0" side_tool="true" weight="0.32950923" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.25621414" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="CMake" order="3" weight="0.3297414" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3297414" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.39978448" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.40064794" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32829374" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25621414" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="CMake" order="3" weight="0.3297414" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.3297414" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.40064794" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32937366" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -301,8 +277,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/client.cpp</url>
-          <line>35</line>
-          <option name="timeStamp" value="19" />
+          <line>47</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -329,13 +305,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ ConnectionHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="87" column="19" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ ConnectionHandler.cpp" />
     <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -346,17 +316,10 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/ConnectionHandler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Task.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#109#128#0" expanded="true" />
           </folding>
@@ -373,40 +336,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConnectionHandler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#45#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EncoderDecoder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" column="15" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="15" />
+        <state relative-caret-position="165">
+          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="e#45#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        <state relative-caret-position="381">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConnectionHandler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/ConnectionHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="63" lean-forward="true" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
         </state>
       </provider>
     </entry>

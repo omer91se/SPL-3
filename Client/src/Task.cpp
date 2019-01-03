@@ -31,9 +31,10 @@ void Task::run() {
         _handler->sendBytes(opcode, 2);
 
         //Send other content if needed.
-        if(to_send.size() > 1){
-            _handler->sendLine(to_send.back());
-        }
+
+        _handler->sendLine(to_send.back());
+
+
 
     }
 }

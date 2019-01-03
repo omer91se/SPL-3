@@ -39,6 +39,8 @@ mutex
 -
 thread
 -
+sstream
+-
 ../include/Task.h
 /home/labkinetic/SPL/spl-net/Client/include/Task.h
 ../include/ConnectionHandler.h

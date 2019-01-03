@@ -151,7 +151,7 @@ public class BidiMessagingProtocolImpl<T> implements BidiMessagingProtocol<T> {
 
             case USERLIST:
                 op = 7;
-                if (userInfo != null)
+                if (userInfo == null)
                     isError = true;
                 else {
                     List<String> userList = DB.getUserList();
@@ -162,7 +162,7 @@ public class BidiMessagingProtocolImpl<T> implements BidiMessagingProtocol<T> {
 
             case STAT:
                 op = 8;
-                if (userInfo != null)
+                if (userInfo == null)
                     isError = true;
                 else {
                     int numOfPosts = DB.numOfPosts(((StatMsg)message).getUsername());
